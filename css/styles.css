@@ -1,0 +1,165 @@
+/*@media (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}*/
+
+html {
+    font-size: 14px; /* 1 rem == 10px */
+}
+
+.box {
+    background-color: #6de9ed;
+    box-sizing: border-box;
+    margin: 5rem auto;
+
+    height: 30rem;
+    width: 30rem;
+    transition: width 1s ease, height 1s ease, background-color .5s ease;
+    -webkit-transition: width 1s ease, height 1s ease, background-color .5s ease;
+    -webkit-animation: spin 5s infinite linear;
+    border: 1rem dashed;
+
+    text-align: center;
+    display: block;
+}
+
+.wrapper-huyapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.34) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.34)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.34) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.34) 0%,rgba(125,185,232,0) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.34) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.34) 0%,rgba(125,185,232,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.box:hover {
+    /* zastenchivyjYozhyk */
+    height: 10rem;
+    width: 10rem;
+    transition: width 1s bounce, height 1s bounce, background-color .5s ease;
+    -webkit-transition: width 1s bounce, height 1s bounce, background-color .5s ease;
+
+    background-color: rgba(255, 171, 38, 1);
+}
+
+.box:hover .huyovo {
+    display: block;
+}
+
+.box:hover .kliovo {
+    display: none;
+}
+
+.huyovo {
+    display: none;
+}
+
+.text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+@media (max-width: 718px) {
+    .box {
+        height: 28rem;
+        width: 28rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 668px) {
+    .box {
+        height: 26rem;
+        width: 26rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 618px) {
+    .box {
+        height: 24rem;
+        width: 24rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 568px) {
+    .box {
+        height: 22rem;
+        width: 22rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 518px) {
+    .box {
+        height: 20rem;
+        width: 20rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 468px) {
+    .box {
+        height: 18rem;
+        width: 18rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 418px) {
+    .box {
+        height: 16rem;
+        width: 16rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 368px) {
+    .box {
+        height: 13rem;
+        width: 13rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 318px) {
+    .box {
+        height: 10rem;
+        width: 10rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@media (max-width: 268px) {
+    .box {
+        height: 7rem;
+        width: 7rem;
+        transition: width 1s ease, height 1s ease;
+        -webkit-transition: width 1s ease, height 1s ease;
+    }
+}
+
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
